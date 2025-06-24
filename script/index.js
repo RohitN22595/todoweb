@@ -68,6 +68,19 @@ export function renderTodocom(){
     });
     deleteContainer.innerHTML = html;
     tohistory();
+    undoTodo();
+}
+
+function undoTodo(){
+    document.querySelectorAll('.undo').forEach((button, i)=>{
+        button.addEventListener('click', ()=>{
+            const undo = completed.splice(i, 1);
+            renderTodocom();
+            saveCompleted();
+            addTodo(undo[0].name, undo[0].date);
+
+        });
+    });
 }
 
 function saveTodos() {

@@ -36,7 +36,7 @@ function rendertodo(){
     const todoContainer = document.querySelector('.todoList');
     let html = '';
     todoList.forEach(({name, date})=>{
-        html = html + `<div class='todoBox'><p class="todoText">${name}</p> <p class="todoDate">${date}</p> <button class="deleteTodo">Completed</button></div>`;
+        html = html + `<div class='todoBox'><p class="todoText">${name}</p> <p class="todoDate">${date}</p> <button class="deleteTodo">Completed</button> <button class="undo">Undo</button></div>`;
     });
     todoContainer.innerHTML = html;
     completedtodo(); 

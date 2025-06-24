@@ -92,7 +92,8 @@
 }
 
 .deleteTodo,
-.deleteTodoD{
+.deleteTodoD,
+.undo{
     margin-right: 20px;
     border: solid 1px black;
     height: 25px;

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: black;
+    height: 35px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.todo,
+.history{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.newTodo,
+.newDate{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+}
+
+.addButton{
+    height: 31px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.todoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 15px;
+    width: 340px;
+    padding-left: 10px;
+}
+
+.containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deleted{
+    margin-right: 30px;
+}
+
+.todoList{
+    margin-left: 30px;
+    border: solid 1px black;
+    height: auto;
+    width: 350px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding-bottom: 20px;   
+}
+
+.todoBox,
+.todoBoxD{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.deleted
+{
+    border: solid 1px black;
+    height: auto;
+    width: 350px;
+    margin-top: 80px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.deleteTodo,
+.deleteTodoD{
+    margin-right: 20px;
+    border: solid 1px black;
+    height: 25px;
+    max-width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.todoText,
+.todoTextD{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.deletedH{
+    width: 400px;
+    height: auto;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.todoHistory{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+    color: transparent;
+}
